@@ -1,11 +1,12 @@
 <?php
 
-$role = "Admin";
+$user = "admin";
+$isLoggedIn = true;
+$isVerified = true;
+$serviceAvailable = true;
 
-if ($role == "Admin") {
-    echo "Welcome Admin!";
-} elseif ($role == "Artisan") {
-    echo "Welcome Artisan!";
+if ($isLoggedIn && $isVerified && $serviceAvailable == true && $user == "admin") {
+    echo "Booking Confirmed";
 } else {
-    echo "Welcome User!";
+    echo "Booking Failed";
 }
